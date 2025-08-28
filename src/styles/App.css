@@ -1,0 +1,66 @@
+.app .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.brand { display: flex; gap: .6rem; align-items: center; }
+.brand h1 { font-size: 1.2rem; margin: 0; }
+.actions { display: flex; gap: .5rem; }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+.uuid-box {
+  margin: .75rem 0 1rem;
+  padding: 1rem;
+  border: 1px dashed var(--border);
+  border-radius: .75rem;
+  background: rgba(0,0,0,.05);
+  word-break: break-all;
+}
+.history { margin-top: 1rem; }
+.history ul { list-style: none; padding: 0; margin: .5rem 0 0; display: grid; gap: .5rem; }
+.history li {
+  display: flex; justify-content: space-between; align-items: center;
+  border: 1px solid var(--border); border-radius: .5rem; padding: .5rem .6rem; background: rgba(0,0,0,.04);
+}
+
+.api-badge {
+  margin-top: 1rem;
+  padding: .75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  color: var(--muted);
+  background: linear-gradient(180deg, rgba(79,70,229,.1), transparent);
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* File structure
+src/
+  components/
+    Header.js
+    UuidCard.js
+    HistoryList.js
+    Footer.js
+  hooks/
+    useClipboard.js
+  styles/
+    App.css
+  App.js
+  index.js
+*/
